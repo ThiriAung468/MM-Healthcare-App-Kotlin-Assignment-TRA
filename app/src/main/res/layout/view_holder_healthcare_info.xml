@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium_2"
+        android:text="[Tech Talk Vol.23] How Much Storage Is Really Needed in A Smartphone?"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_3x" />
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginRight="@dimen/margin_medium_2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/news_placeholder" />
+
+    <Button
+        android:id="@+id/btn_pretty"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="Pretty"
+        android:textAllCaps="false"
+        android:textColor="@color/primary"
+        android:textAlignment="center"
+        android:background="@color/icons"
+        android:layout_below="@+id/iv_image"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_alignLeft="@+id/iv_image"/>
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jssharma"
+        android:textColor="@color/secondary_text"
+        android:layout_toRightOf="@+id/btn_pretty"
+        android:layout_below="@+id/iv_image"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_medium"/>
+
+    <TextView
+        android:id="@+id/tv_gradient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5302"
+        android:drawableLeft="@drawable/ic_gradient_gray_16dp"
+        android:layout_toRightOf="@+id/tv_text"
+        android:layout_below="@id/iv_image"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:paddingLeft="@dimen/margin_medium"/>
+
+    <TextView
+        android:id="@+id/tv_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="229"
+        android:drawableLeft="@drawable/ic_sms_gray_16dp"
+        android:layout_toRightOf="@+id/tv_gradient"
+        android:layout_below="@id/iv_image"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:paddingLeft="@dimen/margin_medium"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="56"
+        android:drawableLeft="@drawable/ic_thumb_up_gray_16dp"
+        android:layout_toRightOf="@+id/tv_sms"
+        android:layout_below="@id/iv_image"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:paddingLeft="@dimen/margin_medium"/>
+
+</RelativeLayout>
